@@ -20,6 +20,13 @@ These labs are optimized for the **Databricks Free Edition**. We will use the **
 
 ---
 
+
+# 🧪 Lab Instructions: Week 1 & 2 (Analyst Focus)
+
+These labs are optimized for the **Databricks Free Edition**. We will use the **Serverless SQL Warehouse**, the **Samples** catalog, and the **Databricks Assistant (Genie)**.
+
+---
+
 ## 📅 Week 1: Data Discovery & Navigation
 **Objective:** Master the Databricks UI, the Catalog Explorer, and basic SQL visualizations.
 
@@ -31,66 +38,50 @@ These labs are optimized for the **Databricks Free Edition**. We will use the **
     3.  **Explore the Tabs:**
         * **Sample Data:** Preview the first 100 rows.
         * **Details:** Find the "Owner" and the underlying file format (Delta).
-        * **Insights:** View common join patterns or frequent queries (if available).
 
 ### Lab 1.2: Your First SQL Analysis
 * **Task:** Identify the most profitable taxi payment methods.
 * **Instructions:**
     1.  Create a new SQL Notebook: `Week1_Taxi_Analysis`.
-    2.  Run the following query in Cell 1:
+    2.  Run the following query:
         ```sql
         SELECT 
             payment_type, 
             COUNT(*) as total_trips,
-            AVG(fare_amount) as avg_fare,
-            AVG(tip_amount) as avg_tip
+            AVG(fare_amount) as avg_fare
         FROM samples.nyctaxi.trips
         GROUP BY 1
         ORDER BY total_trips DESC;
         ```
-    3.  **Visualization:** Click the **+** icon next to the "Results" tab ➡️ **Visualization**.
-        * **Type:** Bar Chart
-        * **X-Column:** `payment_type`
-        * **Y-Column:** `avg_tip`
-    4.  **Observation:** Is there a correlation between payment type (Credit Card vs Cash) and tip amount?
-
-### Lab 1.3: Data Quality Profiling
-* **Task:** Use SQL to find "dirty" data.
-* **Instructions:**
-    1.  Identify trips with impossible values (e.g., zero distance but high fare).
-        ```sql
-        SELECT * FROM samples.nyctaxi.trips 
-        WHERE trip_distance <= 0 AND fare_amount > 0;
-        ```
-    2.  **Self-Correction:** How many rows would you "lose" if you filtered these out?
+    3.  **Visualization:** Click the **+** icon next to the "Results" tab ➡️ **Visualization** to create a Bar Chart.
 
 ---
 
-## 📅 Week 2: Advanced Analytics & AI Assistant
+## 📅 Week 2: Advanced Analytics & AI Generation
 **Objective:** Leverage Databricks' built-in AI to handle complex logic and create interactive tools.
 
 ### Lab 2.1: Multi-Table Joins (The Retail Schema)
-* **Task:** Analyze customer spending habits by market segment.
+* **Task:** Analyze customer spending habits.
 * **Instructions:**
     1.  Create a new SQL Notebook: `Week2_Retail_Intelligence`.
-    2.  We will join the `customer` and `orders` tables from the `tpch` schema.
+    2.  Join the `customer` and `orders` tables:
         ```sql
         SELECT 
             c.c_mktsegment,
-            SUM(o.o_totalprice) AS total_revenue,
-            COUNT(o.o_orderkey) AS order_count
+            SUM(o.o_totalprice) AS total_revenue
         FROM samples.tpch.customer c
         JOIN samples.tpch.orders o ON c.c_custkey = o.o_custkey
-        GROUP BY 1
-        ORDER BY total_revenue DESC;
+        GROUP BY 1;
         ```
 
-### Lab 2.2: Using the Databricks Assistant
-* **Task:** Let AI solve a "Window Function" problem.
+### Lab 2.2: Using Genie to Create Code (AI Assistant)
+* **Task:** Use Natural Language to generate Spark and SQL code without manual typing.
 * **Instructions:**
-    1.  In a new cell, click the **Assistant (✨)** icon or press `Cmd/Ctrl + I`.
-    2.  **Prompt:** *"Using the samples.tpch.orders table, write a query to find the top 3 most expensive orders for every year."*
-    3.  **Review & Run:** Examine how the Assistant uses `ROW_NUMBER()` or `RANK()`. This is a great way to learn advanced SQL syntax on the fly.
+    1.  **Trigger the Assistant:** In a new cell, click the **Assistant (✨)** icon or use the shortcut `Cmd/Ctrl + I`.
+    2.  **Generate SQL:** Type: *"Show me the top 5 longest trips in samples.nyctaxi.trips where the fare was over $50"* and hit **Generate**.
+    3.  **Review & Accept:** Look at the code generated. If it looks correct, click **Accept**.
+    4.  **Refine Code:** Use the Assistant to modify existing code. Highlight a block of code and ask: *"Add a column that calculates the tip percentage."*
+    5.  **Explain Code:** If you see a complex function you don't recognize, highlight it and ask: *"What does this function do?"*
 
 ### Lab 2.3: Building Interactive Widgets
 * **Task:** Create a dashboard-ready notebook with filters.
@@ -104,16 +95,17 @@ These labs are optimized for the **Databricks Free Edition**. We will use the **
         SELECT * FROM samples.tpch.customer 
         WHERE c_mktsegment = getArgument('select_segment');
         ```
-    3.  Change the dropdown value at the top of the notebook and notice how the data refreshes without editing the code.
+    3.  Change the dropdown value at the top and watch the data refresh instantly.
 
----
+---  Week 3 and 4 still in development
 
 ## ✅ Checkpoint: Week 2 Review
 By now, you should be comfortable with:
-* [ ] Navigating the **Catalog** to find tables.
-* [ ] Creating **Visualizations** directly from SQL output.
-* [ ] Using the **Assistant** to generate or fix complex SQL.
-* [ ] Using **Widgets** to make notebooks interactive.
+* [ ] Finding tables in the **Catalog**.
+* [ ] Creating **Visualizations**.
+* [ ] **Using Genie/Assistant** to write and explain code via natural language.
+* [ ] Using **Widgets** for interactivity.
+
 ### ⚙️ Week 3: Data Engineering Patterns (The Lakehouse)
 **Goal:** Transition from querying to building data pipelines.
 * **Key Concept:** The **Medallion Architecture** (Bronze ➡️ Silver).
