@@ -1,6 +1,7 @@
 # learndatalake
 
-This repo contains a library of notebooks to teach the basics of the bronze, silver, gold, data engineering pattern.
+This repo contains a 4 week self paced learning guide to make you confident in analysing data on the Databricks Free Edition platform.  It teach the basics of reading and writing data in the Lakehouse pattern.
+
 # 🚀 Databricks Free Edition: Zero-to-Hero (4-Week Training)
 
 This repository contains a structured, 4-week roadmap to master the **Databricks Free Edition**. We focus on building confidence using the new **Serverless** architecture and the built-in `samples` catalog.
