@@ -14,12 +14,7 @@ This repository contains a structured, 4-week roadmap to master the **Databricks
 
 ## 📅 Weekly Curriculum
 
-# 🧪 Lab Instructions: Week 1 & 2 (Analyst Focus)
-
-These labs are optimized for the **Databricks Free Edition**. We will use the **Serverless SQL Warehouse** and the **Samples** catalog.
-
 ---
-
 
 # 🧪 Lab Instructions: Week 1 & 2 (Analyst Focus)
 
