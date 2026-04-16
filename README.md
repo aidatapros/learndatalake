@@ -51,6 +51,15 @@ These labs are optimized for the **Databricks Free Edition**. We will use the **
         ```
     3.  **Visualization:** Click the **+** icon next to the "Results" tab ➡️ **Visualization** to create a Bar Chart.
 
+### Lab 1.3: Data Quality Profiling
+* **Task:** Use SQL to find "dirty" data.
+* **Instructions:**
+    1.  Identify trips with impossible values (e.g., zero distance but high fare).
+        ```sql
+        SELECT * FROM samples.nyctaxi.trips 
+        WHERE trip_distance <= 0 AND fare_amount > 0;
+        ```
+    2.  **Self-Correction:** How many rows would you "lose" if you filtered these out?
 ---
 
 ## 📅 Week 2: Advanced Analytics & AI Generation
