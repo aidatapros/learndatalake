@@ -2,6 +2,65 @@
 
 This repo contains a 4 week self paced learning guide to make you confident in analysing data on the Databricks Free Edition platform.  It teach the basics of reading and writing data in the Lakehouse pattern.
 
+# 🚀 Databricks Lakehouse Fundamentals: Onboarding & Certification Guide
+# 🚀🚀 Databricks Free Edition: Zero-to-Hero (4-Week Training)
+
+# Databricks Lakehouse Fundamentals: Onboarding & Certification Guide
+
+Welcome to the Data Engineering team. As part of your onboarding, your first objective is to understand our core data architecture and achieve the **Databricks Lakehouse Fundamentals Accreditation**. 
+
+This repository outlines the step-by-step process to complete the free training, understand the core concepts, and pass the exam.
+
+---
+
+## 🎯 Objective
+Complete the Databricks Lakehouse Fundamentals learning path and pass the final assessment to earn your digital badge. This foundational knowledge is critical before you begin hands-on work with our data pipelines and Unity Catalog governance.
+
+## 🛠️ Step 1: Account Setup
+Before starting the training, you need to register for the Databricks Academy.
+1. Go to the [Databricks Partner / Customer Academy](https://customer-academy.databricks.com/).
+2. Sign up using your **company email address**.
+3. Verify your email and log in to the portal.
+
+## 📚 Step 2: The Training Pathway
+Search the Academy catalog for the **Databricks Lakehouse Fundamentals** learning path. The training takes approximately 2 to 4 hours to complete and is broken down into the following core modules:
+
+* **Introduction to the Data Lakehouse:** Why organizations are moving away from siloed Data Warehouses and Data Lakes to a unified Lakehouse architecture.
+* **Databricks Architecture & Services:** The control plane vs. the data plane, and how Databricks interacts with cloud providers (AWS/Azure/GCP).
+* **Data Management with Delta Lake:** Understanding ACID transactions, time travel, and the Bronze/Silver/Gold medallion architecture.
+* **Data Governance with Unity Catalog:** How to secure, govern, and audit data, files, and machine learning models centrally.
+* **Data Engineering & Databricks SQL:** An overview of Databricks Workflows, Delta Live Tables (DLT), and serverless SQL warehouses for BI reporting.
+* **Machine Learning:** A high-level look at MLflow and Databricks AutoML.
+
+> **💡 Pro Tip:** Do not skip the video summaries. Pay close attention to the distinctions between Databricks SQL, Data Science & Engineering, and Machine Learning workspaces.
+
+## 📝 Step 3: Taking the Exam
+Once you have completed the learning path, you will unlock the final assessment. 
+
+* **Cost:** Free
+* **Format:** Multiple-choice questions
+* **Time Limit:** 20 minutes (typically)
+* **Passing Score:** 80% (Usually 16 out of 20 questions correct)
+* **Retakes:** You can retake the exam if you do not pass on the first attempt, but there may be a 24-hour cooling-off period.
+
+### 🔑 Key Concepts to Review Before the Exam:
+1. **Delta Lake:** Know what it is (an open-source storage layer) and its key features (ACID compliance, schema enforcement, time travel).
+2. **Medallion Architecture:** Know the difference between Bronze (raw), Silver (cleansed/filtered), and Gold (business-level aggregates).
+3. **Unity Catalog:** Understand that it provides a unified governance solution for all data and AI assets.
+4. **Compute:** Differentiate between All-Purpose compute (interactive/dev) and Job compute (automated workflows).
+5. **Personas:** Know which Databricks interface is designed for which user (e.g., Databricks SQL for Data Analysts, Machine Learning for Data Scientists).
+
+## 🏆 Step 4: Post-Exam Actions
+Once you pass the exam:
+1. Claim your digital badge via Credly (you will receive an email from Databricks).
+2. Take a screenshot of your passing certificate or badge.
+3. Send the screenshot to your Team Lead / Onboarding Buddy so we can mark this milestone as complete.
+4. Review the team's internal Jira board for your first hands-on Databricks task.
+
+---
+
+
+
 # 🚀 Databricks Free Edition: Zero-to-Hero (4-Week Training)
 
 This repository contains a structured, 4-week roadmap to master the **Databricks Free Edition**. We focus on building confidence using the new **Serverless** architecture and the built-in `samples` catalog.
