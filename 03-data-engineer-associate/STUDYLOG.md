@@ -20,9 +20,9 @@ Open questions: (add anything unclear so a reviewer or the next learner can help
 
 Resources:
 Databricks Academy self-paced course, Build Data Pipelines with Lakeflow Spark Declarative Pipelines (3 sections / 22 lessons / ~2 hrs, Associate level)
-Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark"
-Status: 🟡 In progress
-Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI)
+Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark" <br>
+Status: 🟡 In progress <br>
+Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
 Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
 
 (a commented-out blank template for future entries sits here in the raw file, invisible when rendered)
