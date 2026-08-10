@@ -1,5 +1,7 @@
 ## Study Log 2
 
+### I am taking Data Engineering Learning Plan course, lesson 3: Build Data Pipelines with Apache Spark Declarative Pipelines.
+
 ### [DATE] — Read the official exam guide
 
 Resource: Databricks Certified Data Engineer Associate exam guide, May 2026 version <br>
