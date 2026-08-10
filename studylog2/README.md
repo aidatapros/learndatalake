@@ -14,6 +14,6 @@ Open questions: none yet.
 ### [07 Aug] — Started "Data Ingestion with Lakeflow Connect" (self-paced)
 
 Resource: Databricks Academy self-paced course, Data Ingestion with Lakeflow Connect <br>
-Status: 🟡 In progress <br>
+Status: ✅ Done. <br>
 Takeaways: (fill in as you go — what does Lakeflow Connect actually do, which source connectors did you try, what surprised you) <br>
 Open questions: (add anything unclear so a reviewer or the next learner can help) <br>
