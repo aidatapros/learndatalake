@@ -3,8 +3,8 @@
 ### [DATE] — Read the official exam guide
 
 Resource: Databricks Certified Data Engineer Associate exam guide, May 2026 version
-Status: ✅ Done. 
-Takeaways:  
+Status: ✅ Done. <br>
+Takeaways:  <br>
 The exam covers 7 domains; know the weightings before you study anything else — see the table in README.md.
 No formal prerequisites, but hands-on experience with everything in the guide is explicitly recommended by Databricks, not just reading about it.
 Open questions: none yet.  
