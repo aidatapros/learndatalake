@@ -16,3 +16,13 @@ Status: ✅ In Progress. <br>
 Takeaways: 13 courses and 37 hours to go, starting the first course which is intro to SQL <br>
 Open questions: Not yet <br>
 
+### [xx August 2026] — Building pipelines with Lakeflow Spark Declarative Pipelines
+
+Resources:
+Databricks Academy self-paced course, Build Data Pipelines with Lakeflow Spark Declarative Pipelines (3 sections / 22 lessons / ~2 hrs, Associate level)
+Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark" <br>
+Status: 🟡 In progress <br>
+Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
+Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
+
+
