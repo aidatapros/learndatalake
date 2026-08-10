@@ -2,7 +2,7 @@
 
 ### [DATE] — Read the official exam guide
 
-Resource: Databricks Certified Data Engineer Associate exam guide, May 2026 version
+Resource: Databricks Certified Data Engineer Associate exam guide, May 2026 version <br>
 Status: ✅ Done. <br>
 Takeaways:  <br>
 The exam covers 7 domains; know the weightings before you study anything else — see the table in README.md.
