@@ -17,3 +17,13 @@ Resource: Databricks Academy self-paced course, Data Ingestion with Lakeflow Con
 Status: ✅ Done. <br>
 Takeaways: (fill in as you go — what does Lakeflow Connect actually do, which source connectors did you try, what surprised you) <br>
 Open questions: (add anything unclear so a reviewer or the next learner can help) <br>
+
+### [10 August 2026] — Building pipelines with Lakeflow Spark Declarative Pipelines
+
+Resources: <br>
+Databricks Academy self-paced course, Build Data Pipelines with Lakeflow Spark Declarative Pipelines (3 sections / 22 lessons / ~2 hrs, Associate level)
+Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark" <br>
+Status: 🟡 In progress <br>
+Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
+Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
+
