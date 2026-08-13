@@ -25,7 +25,7 @@ Status: 🟡 In progress <br>
 Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
 Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
 
-(a commented-out blank template for future entries sits here in the raw file, invisible when rendered)
+(a commented-out blank template for future entries sits here in the raw file, invisible when rendered) <br>
 [13 August 2026] - Data Transformation with Spark SQL in Databricks (DataCamp) <br>
 Status: ✅ Done. <br>
 key Takeaway : Loading and Shaping Data — Load CSV files into Spark DataFrames and shape data using PySpark/SQL within a Databricks notebook <br>
