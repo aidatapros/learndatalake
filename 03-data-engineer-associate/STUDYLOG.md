@@ -26,3 +26,12 @@ Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary
 Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
 
 (a commented-out blank template for future entries sits here in the raw file, invisible when rendered)
+[13 August 2026] - Data Transformation with Spark SQL in Databricks (DataCamp) <br>
+Status: ✅ Done. <br>
+key Takeaway : Loading and Shaping Data — Load CSV files into Spark DataFrames and shape data using PySpark/SQL within a Databricks notebook <br>
+Data Cleaning and Optimization — Define explicit schemas, build a data cleaning pipeline, and optimize queries with broadcast joins <br>
+Analytics and Production Pipelines — Calculate window functions, set up file-based streaming with fault-tolerant checkpoints, persist results as Delta tables, and connect to Databricks Workflows / Lakeflow Declarative Pipelines <br>
+Deliverable: I can worke as end-to-end pipeline notebook — from raw data loading → cleaning/joining → analytics → Delta table output → automated orchestration <br>
+Next course: Build Data Pipelines with Lakeflow Spark Declarative Pipelines (DataBricks) <br>
+Status: 🟡 In progress <br>
+
