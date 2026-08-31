@@ -33,5 +33,5 @@ Data Cleaning and Optimization — Define explicit schemas, build a data cleanin
 Analytics and Production Pipelines — Calculate window functions, set up file-based streaming with fault-tolerant checkpoints, persist results as Delta tables, and connect to Databricks Workflows / Lakeflow Declarative Pipelines <br>
 Deliverable: I can worke as end-to-end pipeline notebook — from raw data loading → cleaning/joining → analytics → Delta table output → automated orchestration <br>
 Next course: Build Data Pipelines with Lakeflow Spark Declarative Pipelines (DataBricks) <br>
-Status: 🟡 In progress <br>
+Status: ✅ Done. <br>
 
