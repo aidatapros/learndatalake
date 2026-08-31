@@ -36,7 +36,7 @@ Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimens
 
 
 ### [31 August 2026] — Lakeflow Jobs
-Resources: Academy self-paced course, Get Started with Databricks for Data Engineering
+Resources: Academy self-paced course, Get Started with Databricks for Data Engineering <br>
 Status: In Process. <br>
 
 
