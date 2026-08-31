@@ -33,3 +33,10 @@ Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark"
 Status: ✅ Done. <br>
 Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
 Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
+
+
+### [31 August 2026] — Lakeflow Jobs
+Resources: Academy self-paced course, Get Started with Databricks for Data Engineering
+Status: In Process. <br>
+
+
