@@ -26,7 +26,7 @@ Databricks Community learning series: "Build Data Pipelines with Lakeflow Spark"
 Status: 🟡 In progress <br>
 Takeaways: (fill in — e.g. streaming tables vs materialized views vs temporary views, how you set up data-quality expectations, first impressions of the event log / monitoring UI) <br>
 Open questions: (e.g. "still unclear on AUTO CDC INTO for slowly changing dimensions — need another pass")
-
+<pre>
 -----
 Because there is no lab available for self-paced version of the previous course, I took another course named "Get Started with Data Engineering" which includes lab after every lesson for practicing. Below is my progress of this course. 
 **###[14-17 August 2026] - Lesson 1: Find Your Data and Create a Delta Table**
@@ -35,7 +35,9 @@ Navigated the Unity Catalog hierarchy (catalog → schema → volume)
 Previewed raw CSV data using read_files
 Created first Delta table using CREATE TABLE AS SELECT
 Verified the table in both SQL and Catalog Explorer
+</pre>
 
+<pre>
 **###[21-24 August 2026] - Lesson 2: Modify Data with INSERT, UPDATE, and DELETE**
 Take away:
 Every INSERT, UPDATE, and DELETE creates a new version of the table. Delta Lake tracks all of these versions automatically, which means I can always see what my data looked like before a change
@@ -44,7 +46,9 @@ Added rows with INSERT INTO
 Changed a value with UPDATE ... SET ... WHERE
 Removed a row with DELETE FROM ... WHERE
 Verified all changes are tracked with DESCRIBE HISTORY
+</pre>
 
+<pre>
 **###[28-31 August 2026] - Lesson 3: Explore Version History and Time Travel**
 Take away:
 Each operation created a new version in Delta Lake. Delta Lake automatically maintains a transaction log that records every operation performed on a table. View a Delta table's change log and query data from any previous version is essential in case of auditing, debugging and recovery the data.
@@ -53,7 +57,9 @@ Viewed the full change log with DESCRIBE HISTORY
 Queried previous versions with VERSION AS OF
 Compared row counts across versions to detect changes
 Used the @v shorthand syntax for time travel
+</pre>
 
+<pre>
 **###[04-07 September 2026] - Lesson 4: Ingest Data with CTAS and the Upload UI**
 Take a way: 
 Create a table as select: use when building a pipeline, need reproducibility, or want to select specific columns from the source file
@@ -64,7 +70,9 @@ Selected specific columns to produce a clean table without _rescued_data
 Created a table using the Catalog Explorer Upload UI with no code
 Verified both methods produced working Delta tables
 CTAS is code-driven and repeatable. The Upload UI is fast but manual.
+</pre>
 
+<pre>
 **###[11-14 September 2026] - Lesson 5: Load Data Incrementally with COPY INTO**
 Take away:
 COPY INTO is safe to run on a schedule because it never double-loads data. For production workloads at scale, Databricks recommends streaming tables as a more scalable alternative, but the incremental loading concept is the same.
@@ -73,7 +81,9 @@ Created an empty table with a defined schema
 Loaded 6 rows from 2 CSV files using COPY INTO
 Proved idempotency — re-running loaded 0 rows because the files were already processed
 Verified the transaction log only records actual changes
+</pre>
 
+<pre>
 **###[21 September 2026] - Lesson 6: Build a Medallion Architecture Pipeline**
 Take away:
 The Medallion Architecture organizes data into three layers. Each layer adds quality and structure, moving data from raw ingestion to business-ready analytics:
@@ -87,7 +97,9 @@ Created a Silver table with transformations (UPPER, audit timestamps)
 Created a Gold table with aggregated, business-ready data
 Used the INSERT OVERWRITE pattern for refreshable Gold tables
 Explored lineage, permissions, and insights in Catalog Explorer
+</pre>
 
+<pre>
 **###[25-28 September 2026] - Lesson 7: Automate Your Pipeline with a LakeFlow Job**
 Take away:
 Create a multi-task LakeFlow Job that orchestrates the Bronze → Silver → Gold pipeline with task dependencies, and monitor its execution. A LakeFlow Job runs one or more notebooks as tasks, with dependencies between them. We can define what runs, in what order, and on what schedule.
@@ -96,7 +108,9 @@ Created a LakeFlow Job with two tasks and a dependency
 Explored scheduling options (cron, file arrival, table updates)
 Ran the job and monitored each task's execution
 Verified the automated pipeline produced the same Bronze → Silver → Gold results
+</pre>
 
+<pre>
 **###[02-05 October 2026] - Lesson 8: Build a Declarative Pipeline with Spark Declarative Pipelines**
 Take away:
 Spark Declarative Pipelines handles execution order, incremental processing, error recovery, and infrastructure; we just define the tables. 
@@ -107,3 +121,4 @@ Used a streaming table for incremental ingestion (Bronze)
 Used materialized views for transformations (Silver) and aggregations (Gold)
 Added data quality expectations to catch issues automatically
 Configured and ran an ETL Pipeline that handled orchestration, compute, and execution order for you
+</pre>
